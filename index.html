@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indian Flag</title>
+  <style>
+      body {
+          background: #ff9933;
+          background: -webkit-linear-gradient(to right, #ff9933, #ffffff, #138808);
+          background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+      }
+      .text1,.text2 {
+          text-align: center;
+        font-size: 34px;
+        font-family: sans-serif;
+        color: #000080;
+        margin: 40px 20px;
+        font-weight: bold;
+        text-shadow: 3px 3px #bbb;
+      }    
+      .flags-container {
+          margin-top: 40px;
+      }
+      .flag-container-1 {
+          transform: rotate(19deg);
+          margin-left: 94px;
+      }
+      .flag-container-2 {
+          transform: rotate(-19deg) scalex(-1);
+        margin-right: 94px;
+        }
+        .flag{
+            width: 200px;
+        position: absolute;
+        left: 50%;
+        height: 120px;
+            -webkit-perspective: 1000;
+            -webkit-transform-style: preserve3d;
+            -webkit-transform-origin: 0 250px;
+            -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(-22deg);
+            -webkit-animation-name: wave;
+            -webkit-animation-duration: 8s;
+            -webkit-animation-timing-function: cubic-bezier(0.16, 0.14, 0.82, 0.73);
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            perspective: 1000;
+            transform-style: preserve3d;
+            transform-origin: 0 250px;
+            transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(-22deg);
+            animation-name: flagwave;
+            animation-duration: 8s;
+            animation-timing-function: cubic-bezier(0.16, 0.14, 0.82, 0.73);
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .flag::before {
+            position: absolute;
+            content: "";
+            height: 250px;
+            left: -5px;
+            top: -3px;
+            width: 6px;
+            border-radius: 3px;
+            background-color: #444;
+            box-shadow: -3px 3px 8px 0px rgba(0, 0, 0, 0.4);
+        }
+        .saffron {
+            background: #ff9933;
+          height: 40px;
+        }
+        .white {
+            background-color: #fff;
+        height: 40px;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/630px-Ashoka_Chakra.svg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        }
+        .green {
+            background: #138808;
+        height: 40px;
+        }    
+        @-webkit-keyframes flagwave {
+            0% {
+            box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.1);
+            -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(22deg);
+            }
+            20% {
+            box-shadow: 4px 5px 15px 0 rgba(0, 0, 0, 0.1);
+            -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(0deg);
+            }
+            40% {
+            box-shadow: 4px 5px 20px 0 rgba(0, 0, 0, 0.4);
+            -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(-22deg);
+            }
+            60% {
+            box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.1);
+            -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(0deg);
+            }
+            80% {
+            box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.3);
+            -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(16deg);
+            }
+            100% {
+            box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.1);
+            -webkit-transform: translate3d(0, 0, 0) rotateZ(0deg) rotateY(22deg);
+            }
+        }
+        @media all and (max-width: 767px) {
+          .flag{
+                width: 50%;
+            }    
+        }    
+  </style>
+</head>
+<body>
+    <p class="text1">Proud to be an Indian!!!</p>
+    <p class="text2">Jai Hind!!!</p>
+    <div class="flags-container">
+        <div class="flag-container-1">
+            <div class="flag">
+                <div class="saffron"></div>
+                <div class="white"></div>
+                <div class="green"></div>
+            </div>
+        </div>
+        <div class="flag-container-2">
+            <div class="flag">
+                <div class="saffron"></div>
+                <div class="white"></div>
+                <div class="green"></div>
+            </div>
+        </div>
+    </div>        
+</body>
+    
+</html> 
